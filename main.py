@@ -1,24 +1,3 @@
-"""
-╔══════════════════════════════════════════════════════════════════════════════╗
-║          UMAY GCS — Lunar Rover Ground Control System  v4.0                 ║
-║          Autonomous Navigation + D* Lite + A* + Lunar Hazard Engine         ║
-╠══════════════════════════════════════════════════════════════════════════════╣
-║  Kurulum  : pip install PySide6                                              ║
-║  Çalıştır : python umay_gcs.py                                               ║
-╠══════════════════════════════════════════════════════════════════════════════╣
-║  Entegre Özellikler                                                          ║
-║  ─────────────────                                                           ║
-║  [NAV]  D* Lite + A* Hibrit Planlayıcı (dinamik yeniden planlama)           ║
-║  [MAP]  OccupancyGrid 50×50 + Lunar Hazard Katmanı                          ║
-║  [HAZ]  Krater / Boulder / Ridge / Toz / Gölge hücre tipleri                ║
-║  [SEN]  LunarSensorSuite — LiDAR · IMU · Kamera · Termal simülasyonu        ║
-║  [TEM]  Küresel cam temizleme sistemi değerlendirmesi + EDS/Piezo önerisi   ║
-║  [UDP]  Simulink/Simscape UDP-TCP alıcı                                      ║
-║  [TEL]  Batarya · Hız · Sıcaklık · Sinyal · Teker RPM · CPU sıcaklığı      ║
-║  [LOG]  Renkli navigasyon komutu logu + replan bildirimleri                 ║
-╚══════════════════════════════════════════════════════════════════════════════╝
-"""
-
 import sys, socket, json, math, threading, random, heapq
 from datetime import datetime
 from collections import deque
